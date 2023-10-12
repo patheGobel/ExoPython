@@ -6,8 +6,10 @@ Expected Output:
 [20, 60, 30]
 """
 def displayAllDuplicateItemsFromList(liste):
-    doublons = set()
+    
     elements_vus = set()
+    doublons = set()
+
 
     for element in liste:
         if element in elements_vus:
