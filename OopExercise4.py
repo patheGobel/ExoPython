@@ -28,6 +28,6 @@ class Vehicle:
     
 class Bus(Vehicle):
     def seating_capacity(self, capacity=50):
-        return super().seating_capacity(capacity=50)
+        return super().seating_capacity(capacity)
 modelx=Bus("bus",None,None)
 print(modelx.seating_capacity())
