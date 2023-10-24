@@ -30,14 +30,14 @@ class Vehicle:
         self.max_speed = max_speed
         self.mileage = mileage
 
-    def affiche(self):
-        return f"Color: {Vehicle.color}, Vehicle name: {self.name}, Speed:{self.max_speed}, Mileage: {self.mileage}"
 class Bus(Vehicle):
     pass
 
 class Car(Vehicle):
     pass
 
-modelx = Bus ("School Volvo", 180, 12)
-modely = Vehicle("Audi Q5", 240, 18)
-print(f"{modelx.affiche()}\n{modely.affiche()}")
+School_bus = Bus("School Volvo", 180, 12)
+print(School_bus.color, School_bus.name, "Speed:", School_bus.max_speed, "Mileage:", School_bus.mileage)
+
+car = Car("Audi Q5", 240, 18)
+print(car.color, car.name, "Speed:", car.max_speed, "Mileage:", car.mileage)
